@@ -5,24 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link >
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(212, 45%, 89%);
+    }
+  .crad{ 
+    position: relative; 
+    width: 100%;
+    margin:0 auto; 
+
+  }
+  .card-content{
+    position: relative;
+    width: 200px;
+    margin:0 auto;
+    padding: 12px; 
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .qr-img{     
+    margin: 0 auto;
+    width: 200px; 
+    height: 200px; 
+    display: block; 
+    text-align: center;
+    border-radius: 10px;
+  }
+  .txt{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    font-family: url(https://fonts.google.com/specimen/Outfit);
+  }
+  .title{
+    font-weight: 700;
+    color:  hsl(218, 44%, 22%);
+  }
+  .subtitle{
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+  }
   </style>
 </head>
 <body>
+  <div class="crad">
+    <div class="card-content">
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      
+        <img class="qr-img" src="./images/image-qr-code.png" alt="qr"/>
+        <div class="txt">
+        <p class="title">Improve your front-end skills by building projects</p>
+        <p class="subtitle">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
